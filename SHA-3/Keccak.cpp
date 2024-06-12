@@ -334,7 +334,7 @@ void KeccakBase::keccakf()
 		x = 4;
 		kState.C[x] = A_[index(x, 0)] ^ A_[index(x, 1)] ^ A_[index(x, 2)] ^ A_[index(x, 3)] ^ A_[index(x, 4)];
 
-		int i;
+		int i = 0;
 		x = 0;
 		int y = 0;
 		kState.D[x] = kState.C[index(x - 1)] ^ rotateLeft(kState.C[index(x + 1)], 1);
